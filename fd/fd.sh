@@ -8,9 +8,13 @@ fd() {
     fi
 
     local search_pattern=$1
+    local run_after_cd=$2
     local dir=$(ls | grep "$search_pattern" | fzf)
     if [[ -n "$dir" ]]; then
-        cd "$dir" || return
+        cd "$dir"
+        if [[ -n "$run_after_cd" ]]; then
+            eval "$run_after_cd"
+        fi
     else
         echo "Nothing found (*ﾉωﾉ)"
     fi

@@ -24,10 +24,13 @@ A simple shell function that combines `grep` and `fzf` to quickly find and navig
 fd "foo"
 # or
 fd
+# or
+jump projects; fd auth "npm run start"
 
 ```
 ## Arguments
 - `search_pattern`: Text to filter directory names (optional)
+- `run_after_cd`: Command to run after changing to the selected directory (optional)
 
 ## Notes
 - Uses `fzf` for interactive directory selection
