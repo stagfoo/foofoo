@@ -1,0 +1,4 @@
+example-auth-service = 9001
+example-user-service = 9002
+example-auth-service = 9003
+example-user-service = 9004
