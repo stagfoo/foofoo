@@ -4,3 +4,9 @@ permission.sh
 migrate.sh
 index.sh
 git-stage.sh
+.DS_Store
+.vscode
+.cursorrules
+.cursorignore
+.cursorignorerules
+.cursorignorerules
